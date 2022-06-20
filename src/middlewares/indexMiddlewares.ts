@@ -34,7 +34,6 @@ export default function postProductsMiddlewares(
   }
 
   const error = validateNewProduct(name, amount);
-  console.log(error);
   
   if (error) {
     return res.status(error.status).json({ message: error.message });
