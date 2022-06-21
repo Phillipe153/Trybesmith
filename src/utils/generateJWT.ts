@@ -7,8 +7,9 @@ const jwtConfig: SignOptions = {
   expiresIn: '1d',
   algorithm: 'HS256',
 };
+const secret = 'minhaSenhaSecretaDoProjetoTrybeSmith';
 
-const secret = <string> (process.env.JWT_SECRET);
+// const secret = <string> (process.env.JWT_SECRET);
 
 const generateJWT = (payload: User) => {
   const token = jwt.sign({ data: payload }, secret, jwtConfig);
