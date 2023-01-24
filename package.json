@@ -9,7 +9,8 @@
     "test": "jest",
     "posttest": "ts-node tests/recreateDatabase.ts",
     "restore": "ts-node tests/recreateDatabase.ts",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "dev:server": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
   "author": "",
